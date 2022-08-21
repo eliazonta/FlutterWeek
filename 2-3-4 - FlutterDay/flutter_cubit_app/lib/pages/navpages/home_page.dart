@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, must_be_immutable, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_cubit/misc/colors.dart';
@@ -120,12 +121,13 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               ],
             ),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 10,),
           Container(
             height: 100,
             width: double.maxFinite,
             margin: const EdgeInsets.only(left: 20),
             child: ListView.builder(
+              scrollDirection: Axis.horizontal,
               itemBuilder: (_, index){
                 return Column(
                   children: [
