@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_cubit/pages/home_page.dart';
 import 'package:flutter_cubit/pages/navpages/bar_item_page.dart';
-import 'package:flutter_cubit/pages/navpages/home_page.dart';
 import 'package:flutter_cubit/pages/navpages/my_page.dart';
 import 'package:flutter_cubit/pages/navpages/search_page.dart';
 

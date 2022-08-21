@@ -16,6 +16,15 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
+  
+  var images = {
+    "balloning.png":"Balloning",
+    "hiking.png":"Hiking",
+    "kayaking.png":"Kayaking",
+    "snorkling.png":"Snorkling"
+
+  };
+
   @override
   Widget build(BuildContext context) {
       TabController _tabController = TabController(length: 3, vsync: this);
@@ -44,7 +53,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             ),
           ),
           SizedBox(
-            height: 40,
+            height: 30,
           ),
           //discover text
           Container(
@@ -52,7 +61,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             child: AppLargeText(text: "Discover"),
           ),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           //tabbar
           Container(
@@ -123,16 +132,19 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           ),
           SizedBox(height: 10,),
           Container(
-            height: 100,
+            height: 120,
             width: double.maxFinite,
             margin: const EdgeInsets.only(left: 20),
             child: ListView.builder(
+              itemCount: 4,
               scrollDirection: Axis.horizontal,
               itemBuilder: (_, index){
-                return Column(
-                  children: [
+                return Container(
+                  margin: const EdgeInsets.only(right: 20),
+                  child: Column(
+                    children: [
                       Container(
-                        margin: const EdgeInsets.only(right: 50),
+                        //margin: const EdgeInsets.only(right: 50),
                         width: 80,
                         height: 80,
                         decoration: BoxDecoration(
@@ -140,16 +152,24 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           color: Colors.white,
                           image: DecorationImage(
                             image: AssetImage(
-                              "img/mountain.jpeg"
+                              "img/"+images.keys.elementAt(index)
                             ),
                             fit: BoxFit.cover
                           ),
                         ),
                       ),
-                  ],
+                      SizedBox(height: 10,),
+                      Container(
+                        child: AppText(
+                          text: images.values.elementAt(index),
+                          color: AppColors.textColor2,
+                        ),
+                      ),
+                    ],
+                  ),
                 );
               }
-              ),
+            ),
           ),
         ],
       ),
