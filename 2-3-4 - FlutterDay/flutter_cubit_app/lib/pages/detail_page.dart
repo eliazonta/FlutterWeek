@@ -7,6 +7,7 @@ import 'package:flutter_cubit/misc/colors.dart';
 import 'package:flutter_cubit/pages/widgets/app_buttons.dart';
 import 'package:flutter_cubit/pages/widgets/app_large_text.dart';
 import 'package:flutter_cubit/pages/widgets/app_text.dart';
+import 'package:flutter_cubit/pages/widgets/responsive_button.dart';
 
 class DetailPage extends StatefulWidget {
   const DetailPage({Key? key}) : super(key: key);
@@ -131,14 +132,21 @@ class _DetailPageState extends State<DetailPage> {
             Positioned(
               bottom: 20,
               left: 20,
+              right: 20,
               child: Row(
                 children: [
-                  AppButtons(color: AppColors.textColor2, 
+                  AppButtons(
+                    color: AppColors.textColor1, 
                     backgroundColor: Colors.white, 
                     size: 60, 
-                    borderColor: AppColors.textColor2,
+                    borderColor: AppColors.textColor1,
                     isIcon: true,
                     icon: Icons.favorite_border,
+                  ),
+                  SizedBox(width: 20,),
+                  ResponsiveButton(
+                    isResponsive: true,
+
                   ),
                 ],
               ),
