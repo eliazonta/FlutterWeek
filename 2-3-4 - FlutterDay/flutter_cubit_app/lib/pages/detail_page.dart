@@ -17,6 +17,8 @@ class DetailPage extends StatefulWidget {
 
 class _DetailPageState extends State<DetailPage> {
   int gottenStars = 4;
+  int selectedIndex = -1;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -96,13 +98,49 @@ class _DetailPageState extends State<DetailPage> {
                     AppLargeText(text: "People", color: Colors.black.withOpacity(0.8),size: 20,),
                     SizedBox(height: 5,),
                     AppText(text: "Number of people in your group", color: AppColors.mainTextColor,),
+                    SizedBox(height: 10,),
                     Wrap(
                       children: List.generate(5, (index) {
-                        return AppButtons(color: Colors.white, backgroundColor: AppColors.buttonBackground, size: 50, borderColor: AppColors.buttonBackground);
+                        return InkWell(
+                          onTap: () {
+                            setState(() {
+                              selectedIndex = index;
+                            });
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(right: 10),
+                            child: AppButtons(
+                              color: selectedIndex == index?Colors.white : Colors.black, 
+                              backgroundColor: selectedIndex == index? Colors.black : AppColors.buttonBackground, 
+                              size: 50, 
+                              borderColor: selectedIndex == index? Colors.black : AppColors.buttonBackground,
+                              text: (index + 1).toString(),
+                            ),
+                          ),
+                        );
                       }),
                     ),
+                    SizedBox(height: 20,),
+                    AppLargeText(text: "Description", color: Colors.black.withOpacity(0.8),size: 20,),
+                    SizedBox(height: 10,),
+                    AppText(text: "Yosemite National Park is located in Central Sierra Nevada in the US state of california. It is located near the wild protected areas.", color: AppColors.mainTextColor,),
                   ],
                 ),
+              ),
+            ),
+            Positioned(
+              bottom: 20,
+              left: 20,
+              child: Row(
+                children: [
+                  AppButtons(color: AppColors.textColor2, 
+                    backgroundColor: Colors.white, 
+                    size: 60, 
+                    borderColor: AppColors.textColor2,
+                    isIcon: true,
+                    icon: Icons.favorite_border,
+                  ),
+                ],
               ),
             ),
           ],
