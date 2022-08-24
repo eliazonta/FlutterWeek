@@ -5,6 +5,10 @@
 
  # Flutter Week Day 5 🔥👨🏻‍💻
 
+![trip app screenshot1](https://github.com/eliazonta/FlutterWeek/tree/main/2-3-4%20-%20FlutterDay/flutter_cubit_app/assets/img1.png)
+![trip app screenshot2](https://github.com/eliazonta/FlutterWeek/tree/main/2-3-4%20-%20FlutterDay/flutter_cubit_app/assets/img2.png)
  ### Trip app
  Following the tutorial the app is finished, loved the course because gave me a general understanding of how the app itself works.
  Definitly looking forward to deepen more into this framework as I can (or I have time)
+
+
