@@ -5,7 +5,11 @@
 
  # Flutter Week Day 5 🔥👨🏻‍💻
 
-![trip app screenshot1](./assets/img1.png | height=500) ![trip app screenshot2](./assets/img2.png | height=500)
+![trip app screenshot1](./assets/img1.png){:height="500px"} 
+![trip app screenshot2](./assets/img2.png){:height="500px"}
+First Screenshot           |  Second Screenshot
+:-------------------------:|:-------------------------:
+![](./assets/img1.png)  |  ![](./assets/img2.png)
  ### Trip app
  Following the tutorial the app is finished, loved the course because gave me a general understanding of how the app itself works.
  Definitly looking forward to deepen more into this framework as I can (or I have time)
