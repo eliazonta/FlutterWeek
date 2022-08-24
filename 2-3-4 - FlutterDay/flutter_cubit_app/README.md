@@ -5,8 +5,6 @@
 
  # Flutter Week Day 5 🔥👨🏻‍💻
 
-![trip app screenshot1](./assets/img1.png){:height="500px"} 
-![trip app screenshot2](./assets/img2.png){:height="500px"}
 First Screenshot           |  Second Screenshot
 :-------------------------:|:-------------------------:
 ![](./assets/img1.png)  |  ![](./assets/img2.png)
