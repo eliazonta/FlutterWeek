@@ -10,3 +10,7 @@ Starting tomorrow morting (reading 📖 and training 🏋🏻‍♂️ today �
 (Probabily I will be stuck in HelloWorld things lol)
 Anyway won't be ofc a 'flex' or something like I just want have finished so early my exams so I need to work on things and acquire new skills.
 Let's see 👀
+
+## Final thoughts
+This "challenge" helped me a lot, usually I like having deadlines so I can manage better my work and spread it properly. This week has been crazy good because basically all days I was (9.00am - 12.30am / 13.30 - 19) full immersion on the flutter framework, read a lot of documents, papers and tried my small things.
+Looking forward to develop something in my own for sure!!
