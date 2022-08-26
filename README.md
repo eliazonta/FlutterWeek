@@ -13,4 +13,4 @@ Let's see 👀
 
 ## Final thoughts
 This "challenge" helped me a lot, usually I like having deadlines so I can manage better my work and spread it properly. This week has been crazy good because basically all days I was (9.00am - 12.30am / 13.30 - 19) full immersion on the flutter framework, read a lot of documents, papers and tried my small things.
-Looking forward to develop something in my own for sure!!
+Looking forward to develop something in my own for sure!!🚀
