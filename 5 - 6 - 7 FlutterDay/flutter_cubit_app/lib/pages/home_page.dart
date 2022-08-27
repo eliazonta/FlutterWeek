@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 //discover text
                 Container(
                   margin: const EdgeInsets.only(left: 20),
-                  child: AppLargeText(text: "Discover"),
+                  child: AppLargeText(text: "Discover places"),
                 ),
                 SizedBox(
                   height: 20,
