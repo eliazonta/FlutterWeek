@@ -68,7 +68,7 @@ class _WelcomePageState extends State<WelcomePage> {
                     AppText(text: title[index], size: 30),
                     SizedBox(height: 20,),
                     Container(
-                      width: 250,
+                      width: 300,
                       child: AppText(
                         text: description[index],
                         color: AppColors.textColor2,
