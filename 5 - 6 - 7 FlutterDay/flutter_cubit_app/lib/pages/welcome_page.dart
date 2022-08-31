@@ -68,7 +68,7 @@ class _WelcomePageState extends State<WelcomePage> {
                     AppText(text: title[index], size: 30),
                     SizedBox(height: 20,),
                     Container(
-                      width: 300,
+                      width: 250,
                       child: AppText(
                         text: description[index],
                         color: AppColors.textColor2,
@@ -91,6 +91,7 @@ class _WelcomePageState extends State<WelcomePage> {
                     ),
                   ],
                 ),
+
                 Column(
                   children: List.generate(3, (indexDots){
                     return Container(
